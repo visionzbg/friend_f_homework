@@ -1,5 +1,5 @@
 {
-  "name": "friend_finder",
+  "name": "friend_f_homework",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -13,12 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/visionzbg/friend_finder.git"
+    "url": "git+https://github.com/visionzbg/friend_f_homework.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/visionzbg/friend_finder/issues"
+    "url": "https://github.com/visionzbg/friend_f_homework/issues"
   },
-  "homepage": "https://github.com/visionzbg/friend_finder#readme"
+  "homepage": "https://github.com/visionzbg/friend_f_homework#readme"
 }
