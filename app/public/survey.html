@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <title>Friend Finder - Survey</title>
 </head>
 
@@ -130,7 +133,7 @@
             </div>
         </div>
         <div class='col s4'>
-            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/visionzbg/friend_f_homework' target='_blank'>GitHub Repo</a></p>
+            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/visionzbg/friend_f_homework/app/public/images/Gary.jpg' target='_blank'>GitHub Repo</a></p>
         <!-- Match will display here until I can get modal working -->
             <h4>Meet Your New BFF</h4>
             <h5 id="matchName"></h5>
@@ -202,23 +205,38 @@ $("#submitBtn").on("click", function() {
             // Grab the result from the AJAX post so that the best match's name and photo are displayed.
             $("#matchName").text(data.name);
             $("#matchPic").attr("src", data.profilePic);
+		});
+			
             // Show the modal with the best match
             $('.modal-trigger').modal();
-        });
+  
+		//clear form after submission
+            $('#name').val("");
+            $('#photo').val("");
+            $('#q1').val("");
+            $('#q2').val("");
+            $('#q3').val("");
+            $('#q4').val("");
+            $('#q5').val("");
+            $('#q6').val("");
+            $('#q7').val("");
+            $('#q8').val("");
+            $('#q9').val("");
+            $('#q10').val("");
     } else {
         alert("Please fill out all fields before submitting survey!")
     }
     return false;
 });
 
-var elem = document.querySelector('.carousel');
-  var instance = M.Carousel.init(elem, options);
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
-  });
+//var elem = document.querySelector('.carousel');
+//  var instance = M.Carousel.init(elem, options);
+//
+//  // Or with jQuery
+//
+//  $(document).ready(function(){
+//    $('.carousel').carousel();
+//  });
 </script>
 </body>
 

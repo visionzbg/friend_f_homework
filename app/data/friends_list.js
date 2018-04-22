@@ -3,7 +3,7 @@
 var friendList = [
     {
       name: 'Gary Estime',
-      profilePic: '../images/gary.jpg',
+      profilePic: 'https://github.com/visionzbg/friend_f_homework/app/public/images/Gary.jpg',
       "scores":[
         "4",
         "5",
