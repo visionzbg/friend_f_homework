@@ -9,11 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
   <title>Friend Finder</title>
   <style>
     .card-panel{
@@ -52,13 +48,13 @@
   </style>
 </head>
 <body>
-  <div class='container'>
-    <div class='card-panel yellow darken-1 col s12'>
-      <section class='center-align'>
+  <div class="container">
+    <div class="card-panel yellow darken-1 col s12">
+      <section class="center-align">
         <h1>Friend Finder</h1>
         <img src="./images/beard_logo2.gif" width="80" height="auto" alt=""/>
         <h4>Answer a few questions... Meet your new best friend.</h4><br>
-        <a href='/survey' class="waves-effect waves-light btn cyan lighten-1"><i class="material-icons left">comment</i>Take Survey</a>
+        <a href="/survey" class="waves-effect waves-light btn cyan lighten-1"><i class="material-icons left">comment</i>Take Survey</a>
       </section>
           <p><small><i>("Check out our Celebrity look-alikes!")</i></small></p>
       <!-- <div class="container"> -->
@@ -100,10 +96,15 @@
       <!-- </div> -->
             
     </div>
-    <div class='col s4'>
-      <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/visionzbg/friend_f_homework' target= '_blank'>GitHub Repo</a></p>
+    <div class="col s4">
+      <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/visionzbg/friend_f_homework" target= "_blank">GitHub Repo</a></p>
     </div>
-
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script> -->
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+      
 <script>
   var myIndex = 0;
   carousel();

@@ -19,8 +19,8 @@ app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 // =============================================================
 //require('./app/routing/api_routes.js')(app); 
 //require('./app/routing/html_routes.js')(app);
-require(path.join(__dirname, './app/routing/apiRoutes'))(app);
-require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
+require(path.join(__dirname, './app/routing/api_routes'))(app);
+require(path.join(__dirname, './app/routing/html_routes'))(app);
 
 // Starts the server to begin listening
 // =============================================================

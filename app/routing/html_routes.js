@@ -11,7 +11,7 @@ module.exports = function(app){
   });
 
   //Route to Home  (HTML) page
-  app.use(function (req, res) {
+  app.use("/",function (req, res) {
     res.sendFile(path.join(__dirname + '/../public/index.html'));
   });
 };
