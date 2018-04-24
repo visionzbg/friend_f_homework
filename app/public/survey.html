@@ -18,18 +18,18 @@
 </head>
 
 <body>
-    <div class='container'>
-        <div class='card-panel yellow darken-1 col s12 center-align'>
+    <div class="container">
+        <div class="card-panel blue-grey darken-2 col s12 center-align">
             <h4><strong>Survey Questions</strong></h4>
-            <div class='card-panel left-align white'>
+            <div class="card-panel left-align white">
                 <h5><strong>About You</strong></h5>
                 <br>
                 <input id="name" type="text" class="validate" required>
-                <label class='active' for="name">Name (required)</label>
+                <label class="active" form="name">Name (required)</label>
                 <input id="photo" type="text" class="validate" required>
-                <label class='active' for="name">Link to Photo Image (required)</label>
+                <label class="active" form="name">Link to Photo Image (required)</label>
                 <h5><strong>Question 1</strong></h5>
-                <p>I see myself as extroverted, enthusiastic.</p>
+                <p>I love bumper stickers.</p>
                 <select data-placeholder="" class="browser-default" id="q1">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -39,7 +39,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 2</strong></h5>
-                <p>I see myself as critical, quarrelsome.</p>
+                <p>David Hasselhoff is the greatest thespian of all time.</p>
                 <select data-placeholder="" class="browser-default" id="q2">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -49,7 +49,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 3</strong></h5>
-                <p>I see myself as dependable, self-disciplined.</p>
+                <p>I make my bed every day.</p>
                 <select data-placeholder="" class="browser-default" id="q3">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -59,7 +59,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 4</strong></h5>
-                <p>I see myself as anxious, easily upset.</p>
+                <p>Starbucks makes better coffee than Dunkin Donuts.</p>
                 <select data-placeholder="" class="browser-default" id="q4">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -69,7 +69,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 5</strong></h5>
-                <p>I see myself as open to new experiences.</p>
+                <p>Wu-Tang Clan ain't nothing to fuck with.</p>
                 <select data-placeholder="" class="browser-default" id="q5">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -79,7 +79,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 6</strong></h5>
-                <p>I see myself as reserved, quiet</p>
+                <p>William Howard Taft was the last U.S. President with facial hair.</p>
                 <select data-placeholder="" class="browser-default" id="q6">
                     <option value="" disabled selected>Choose an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -89,7 +89,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 7</strong></h5>
-                <p>I see myself as sympathetic.</p>
+                <p>Donald Trump should be impeached for coluding with the Russians is the 2016 Presidential elections.</p>
                 <select data-placeholder="" class="browser-default" id="q7">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -99,7 +99,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 8</strong></h5>
-                <p>I see myself as disorganized.</p>
+                <p>JavaScript and Java are the same programming language.</p>
                 <select data-placeholder="" class="browser-default" id="q8">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -109,7 +109,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 9</strong></h5>
-                <p>I see myself as calm, emotionally stable.</p>
+                <p>Web designers are sexy.</p>
                 <select data-placeholder="" class="browser-default" id="q9">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -119,7 +119,7 @@
                     <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <h5><strong>Question 10</strong></h5>
-                <p>I see myself as practical, conventional.</p>
+                <p>Bill Cosby would make a great baby-sitter.</p>
                 <select data-placeholder="" class="browser-default" id="q10">
                     <option value="" disabled selected>Choose an option</option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -132,8 +132,8 @@
                 <button type="submit" class="waves-effect waves-light btn cyan lighten-1" id="submitBtn">Submit</button>
             </div>
         </div>
-        <div class='col s4'>
-            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/visionzbg/friend_f_homework/app/public/images/Gary.jpg' target='_blank'>GitHub Repo</a></p>
+        <div class="col s4">
+            <p><a href="/api/friends_list">API Friends List</a> | <a href="https://github.com/visionzbg/friend_f_homework" target="_blank">GitHub Repo</a></p>
         <!-- Match will display here until I can get modal working -->
             <h4>Meet Your New BFF</h4>
             <h5 id="matchName"></h5>
@@ -157,23 +157,22 @@
 
 </div>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery.js"></script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-<!-- Grabs information and sends it to server -->
+
+<!-- //Grabs information and sends it to server -->
 <script type="text/javascript">
+$(document).ready(function() {
+
 $("#submitBtn").on("click", function() {
     //form validation
     function validateForm() {
         var isValid = true;
-        $('.validate').each(function() {
-            if ($(this).val() === '') {
+        $(".validate").each(function() {
+            if ($(this).val() === "") {
                 isValid = false;
             }
         });
-        $('.browser-default').each(function() {
-            if ($(this).val() === '') {
+        $(".browser-default").each(function() {
+            if ($(this).val() === "") {
                 isValid = false;
             }
         });
@@ -183,60 +182,53 @@ $("#submitBtn").on("click", function() {
     if (validateForm() == true) {
         //creates a new friend from the values submitted
         var newFriend = {
-            name: $('#name').val().trim(),
-            profilePic: $('#photo').val().trim(),
+            name: $("#name").val().trim(),
+            profilePic: $("#photo").val().trim(),
             scores: [
-                $('#q1').val(),
-                $('#q2').val(),
-                $('#q3').val(),
-                $('#q4').val(),
-                $('#q5').val(),
-                $('#q6').val(),
-                $('#q7').val(),
-                $('#q8').val(),
-                $('#q9').val(),
-                $('#q10').val(),
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val(),
             ]
         };
         //Grabs current URL of website
         var currentURL = window.location.origin;
         //AJAX posts the data to friends API.
-        $.post(currentURL + "/api/friends", newFriend, function(data) {
-            // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $.post(currentURL + "/api/friends_list", newFriend, function(data) {
+            // Grab the result from the AJAX post so that the best match"s name and photo are displayed.
             $("#matchName").text(data.name);
             $("#matchPic").attr("src", data.profilePic);
 		});
 			
             // Show the modal with the best match
-            $('.modal-trigger').modal();
+            $(".modal").modal();
   
 		//clear form after submission
-            $('#name').val("");
-            $('#photo').val("");
-            $('#q1').val("");
-            $('#q2').val("");
-            $('#q3').val("");
-            $('#q4').val("");
-            $('#q5').val("");
-            $('#q6').val("");
-            $('#q7').val("");
-            $('#q8').val("");
-            $('#q9').val("");
-            $('#q10').val("");
+            $("#name").val("");
+            $("#photo").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val("");
     } else {
         alert("Please fill out all fields before submitting survey!")
     }
-    return false;
+    // return false;
+    });
 });
 
-//var elem = document.querySelector('.carousel');
-//  var instance = M.Carousel.init(elem, options);
-//
-//  // Or with jQuery
-//
-//  $(document).ready(function(){
-//    $('.carousel').carousel();
-//  });
 </script>
 </body>
 
